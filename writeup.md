@@ -106,7 +106,7 @@ The overall detecting methods are combined into function `detectine_pipeline()` 
 
 ### Video Output
 
-Here's the [result](./project_res.mp4) of video lane line detection.
+Here's the [result](tmp_output/project_res.mp4) of video lane line detection.
 
 ---
 
