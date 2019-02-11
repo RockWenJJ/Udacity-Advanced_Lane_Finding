@@ -20,7 +20,7 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  Then save the camera calibration parameters to `camCalib.pkl`. Finally, this distortion correction is applied to the test image with the `cv2.undistort()` function and I obtained this result: 
 
-![undistorted chessboard][./tmp_output/undistort_chessboard.png]
+![undistorted chessboard](./tmp_output/undistort_chessboard.png)
 
 ### Pipeline (single images)
 
@@ -28,13 +28,13 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 
 Firstly, I apply the distortion correction to one of the test images like this one:
 
-![undistorted image][./tmp_output/undistort.png]
+![undistorted image](./tmp_output/undistort.png)
 
 2. **Create thresholded binary images using color and gradient selection**
 
 I used a combination of color and gradient thresholds to generate a binary image. The code of creating binary image is located in Cell 6 and 7 of `submission.ipnb`. Here's an example of my output for this step:
 
-![undistorted image][./tmp_output/binary_image.png]
+![undistorted image](./tmp_output/binary_image.png)
 
 3. **Apply perspective transform**
 
@@ -66,8 +66,8 @@ The code is shown in the code cell 8 in `submission.ipynb`.
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
 
-![warped image][./tmp_output/warped.png]
-![warped binary][./tmp_output/warped_binary.png]
+![warped image](./tmp_output/warped.png)
+![warped binary](./tmp_output/warped_binary.png)
 
 4. **Detect lane-line pixels and fit with a polynomial**
 
@@ -100,7 +100,7 @@ The code is located in code cell 12 of `submission.ipynb`.
 
 The overall detecting methods are combined into function `detectine_pipeline()` in code cell 14 of `submission.ipynb`. Here is an example of my result on a test image:
 
-![output result][./tmp_output/example.png]
+![output result](./tmp_output/example.png)
 
 ---
 

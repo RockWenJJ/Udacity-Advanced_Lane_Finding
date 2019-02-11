@@ -1,6 +1,6 @@
 # **Finding Lane Lines on the Road** 
 
-![chanllenge01](test_images_output/challenge01.jpg)
+![output result](./tmp_output/example.png)
 
 Overview
 ---
